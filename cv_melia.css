@@ -14,7 +14,6 @@ body
 	font-family: robotolight, arial, serif, sans-serif;
     margin: auto;
     border: 1px solid #567C73;
-    max-width: 900px;
 }
 
 #bloc_page
@@ -273,7 +272,7 @@ h4
 
 /*RESPONSIVE MOBILE */
 
-@media all and (max-width: 700px)
+@media all and (max-width: 700px) and (max-device-width: 480px)
 {
     body
     {
@@ -333,12 +332,7 @@ h3
 
 #recommandations
 {
-    text-align: justify;
-}
-
-.id_reco
-{
-    padding: 0 10%;
+    text-align: center;
 }
 
 #bloc_droit i
@@ -384,6 +378,7 @@ h3
 {
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 50%;
 }
 
 #a_propos_de_moi p
