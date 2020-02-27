@@ -14,6 +14,7 @@ body
 	font-family: robotolight, arial, serif, sans-serif;
     margin: auto;
     border: 1px solid #567C73;
+    max-width: 900px;
 }
 
 #bloc_page
@@ -272,7 +273,7 @@ h4
 
 /*RESPONSIVE MOBILE */
 
-@media all and (max-width: 700px) and (max-device-width: 480px)
+@media all and (max-width: 700px)
 {
     body
     {
@@ -364,21 +365,24 @@ h3
 {
     width: 40%;
     border-left: 2px solid white;
+    line-height: 120%;
 }
 
+#a_propos_de_moi h3
+{
+    padding-top: 2%;
+}
 #loisir
 {
 
-    width: 30%;
-    margin: auto;
+    width: 20%;
+    margin: 0;
     border-left: 2px solid white;
 }
 
 #loisir_icones
 {
     flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 50%;
 }
 
 #a_propos_de_moi p
@@ -390,7 +394,7 @@ h3
 #contact ul
 {
     margin: 0;
-    padding: 10%;
+    padding: 5% 10%;
     text-align: justify;
     line-height: 120%;
 
