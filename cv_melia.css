@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	font-family: robotolight, arial, serif, sans-serif;
+    margin: auto;
+    border: 1px solid #567C73;
+}
+
+#bloc_page
+{
+    width: 100%;
+}
+
+b
+{
+    font-weight: bold;
+}
+        /*-------------HEADER---------------*/
+header
+{
+    display: flex;
+    width: 100%;
+}
+
+#img
+{
+    background-color: #567C73;
+    width: 35%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.entete
+{
+    width: 65%;
+    text-align: justify;
+    margin: 5%;
+    line-height: 110%;
+    color: #424242;
+}
+
+.firstname
+{
+    color: #567C73;
+}
+
+h1
+{
+    font-size: 250%;
+}
+
+u
+{
+    text-decoration-color: #567C73;
+    padding-top: 3%;
+    text-underline-position: under;
+}
+
+.entete h2
+{
+    font-size: 130%;
+    margin: 0;
+    padding: 0;
+}
+
+#ma_photo
+{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #567C73;
+    background: url(ma_photo.jpg) no-repeat center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    background-size: 34%;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+            /*-----------------BLOC GAUCHE -----------------*/
+#bloc_gauche
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #567C73;
+}
+
+
+#contact ul
+{
+    font-size: 70%;
+    text-align: justify;
+    padding: 2% 15% 5% 10%;
+    margin-top: 5%;
+    color: white;
+}
+
+#a_propos_de_moi p
+{
+    font-size: 70%;
+    text-align: justify;
+    padding: 5% 15% 5% 10%;
+    margin-top: 2%;
+    color: white;
+}
+
+#a_propos_de_moi
+{
+    letter-spacing: 0.1em;
+    line-height: 150%;
+    flex-grow: 1;
+}
+
+#bloc_gauche h3
+{
+    background-color: white;
+    color: #567C73;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0;
+    font-size: 120%;
+    border-right: 1px solid #567C73;
+}
+
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+ul li
+{
+    padding-bottom: 5%;
+}
+
+#loisir_icones
+{
+    display: flex;
+    padding: 8%;
+}
+
+.icone
+{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact, #a_propos_de_moi, #loisir h3
+{
+    padding: 0;
+}
+
+            /*-------------- BLOC DROIT--------------*/
+
+#bloc_droit
+{
+    width: 65%;
+    margin:  0 5%;
+    color: #424242;
+}
+
+#bloc_droit p
+{
+    font-size: 75%;
+}
+
+#bloc_droit h3
+{
+    font-size: 120%;
+    color: black;
+    margin-bottom: 2%;
+}
+
+#bloc_droit h4
+{
+    font-size: 100%;
+    color: #424242;
+}
+
+h3 i,.dot
+{
+    color: #567C73;
+    padding-right: 5%;
+
+}
+
+.bloc_formation
+{
+    display: flex;
+}
+
+.date
+{
+    width: 34%;
+    display: flex;
+}
+
+.dot
+{
+    padding: 5% 7% 0 0;
+}
+
+.formateur, .employeur
+{
+    width: 64%;
+    text-align: justify;
+}
+
+h4
+{
+    margin: 2% 0;
+}
+
+.bloc_emploi
+{
+    display: flex;
+}
+#recommandations
+{
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.id_reco
+{
+    width: 50%;
+}
+
+#formation, #emploi, #recommandations
+{
+    border-top: 2px solid #567C73;
+    padding-top: 4%;
+}
+
+h1
+{
+    color: black;
+}
+
+
+h4
+{
+    margin-top: 4%;
+}
+
+
+
+/*RESPONSIVE MOBILE */
+
+@media all and (max-width: 700px) and (max-device-width: 480px)
+{
+    body
+    {
+        width: auto;
+        margin: 0;
+        border:none;
+    }
+    header
+    {
+        width: auto;
+        flex-direction: column;
+        margin: auto;
+        background-color: #567C73;
+    }
+    
+    #img
+    {
+        margin:auto;
+        padding: 0;
+    }
+
+    #ma_photo
+    {
+        width: 150px;
+        height: 150px;
+        border: 1px solid white;
+    }
+
+    .entete
+    {
+        width: auto;
+        margin: 0;
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    .firstname, h1, h2
+    {
+        color: white;
+    }
+main
+{
+    flex-direction: column;
+}
+
+#bloc_droit
+{
+    margin: 0 3%;
+    width: auto;
+}
+
+h3
+{
+    width: 100%;
+    text-align: center;
+}
+
+#recommandations
+{
+    text-align: center;
+}
+
+#bloc_droit i
+{
+    display: none;
+}
+
+#bloc_gauche
+{
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    padding: 2% 0;
+}
+
+#bloc_gauche h3
+{
+    background-color: #567C73;
+    color: white;
+    padding: 0;
+}
+
+#contact
+{
+    width: 30%;
+}
+
+#a_propos_de_moi
+{
+    width: 40%;
+    border-left: 2px solid white;
+}
+
+#loisir
+{
+
+    width: 30%;
+    margin: auto;
+    border-left: 2px solid white;
+}
+
+#loisir_icones
+{
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50%;
+}
+
+#a_propos_de_moi p
+{
+    margin: 0;
+    padding: 5% 10%;
+    letter-spacing: 0;
+}
+#contact ul
+{
+    margin: 0;
+    padding: 10%;
+    text-align: justify;
+    line-height: 120%;
+
+}
+
+
+
+}
+
