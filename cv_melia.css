@@ -14,7 +14,6 @@ body
 	font-family: robotolight, arial, serif, sans-serif;
     margin: auto;
     border: 1px solid #567C73;
-    max-width: 900px;
 }
 
 #bloc_page
@@ -55,7 +54,7 @@ header
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    background-size: 34%;
+    background-size: 35%;
 }
 
 #header
