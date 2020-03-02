@@ -15,6 +15,7 @@ body
     margin: auto;
     border: 1px solid #567C73;
     max-width: 900px;
+    min-width: 320px;
 }
 
 #bloc_page
@@ -26,6 +27,11 @@ b
 {
     font-weight: bold;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
         /*-------------HEADER---------------*/
 header
 {
@@ -33,16 +39,27 @@ header
     width: 100%;
 }
 
-#img
+#ma_photo
 {
     background-color: #567C73;
     width: 35%;
     padding-top: 5%;
     padding-bottom: 4%;
-
 }
 
-.entete
+#photo
+{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #567C73;
+    background: url(ma_photo.jpg) no-repeat center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    background-size: 34%;
+}
+
+#header
 {
     width: 65%;
     text-align: justify;
@@ -51,7 +68,7 @@ header
     color: #424242;
 }
 
-.firstname
+#name
 {
     color: #567C73;
 }
@@ -68,26 +85,12 @@ u
     text-underline-position: under;
 }
 
-.entete h2
+#header h2
 {
     font-size: 130%;
-    margin: 0;
-    padding: 0;
 }
 
-#ma_photo
-{
-    width: 150px;
-    height: 150px;
-    border: 3px solid #567C73;
-    background: url(ma_photo.jpg) no-repeat center;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-    background-size: 34%;
-}
-
-
+ 
 main
 {
     display: flex;
@@ -102,22 +105,12 @@ main
     background-color: #567C73;
 }
 
-
-#contact ul
+.infos
 {
     font-size: 70%;
     text-align: justify;
     padding: 2% 15% 5% 10%;
     margin-top: 5%;
-    color: white;
-}
-
-#a_propos_de_moi p
-{
-    font-size: 70%;
-    text-align: justify;
-    padding: 5% 15% 5% 10%;
-    margin-top: 2%;
     color: white;
 }
 
@@ -139,7 +132,6 @@ main
     border-right: 1px solid #567C73;
 }
 
-
 ul
 {
     list-style: none;
@@ -157,23 +149,18 @@ ul li
     padding: 8%;
 }
 
-.icone
+.icones
 {
-    color: white;
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
     display: flex;
-    margin: auto;
-    padding: auto;
     justify-content: center;
     align-items: center;
-}
-
-#contact, #a_propos_de_moi, #loisir h3
-{
-    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+    padding: auto;
 }
 
             /*-------------- BLOC DROIT--------------*/
@@ -210,7 +197,7 @@ h3 i,.dot
 
 }
 
-.bloc_formation
+.bloc_formation, .bloc_emploi
 {
     display: flex;
 }
@@ -226,21 +213,12 @@ h3 i,.dot
     padding: 5% 7% 0 0;
 }
 
-.formateur, .employeur
+.etablissement
 {
     width: 64%;
     text-align: justify;
 }
 
-h4
-{
-    margin: 2% 0;
-}
-
-.bloc_emploi
-{
-    display: flex;
-}
 #recommandations
 {
     display: flex;
@@ -258,24 +236,23 @@ h4
     padding-top: 4%;
 }
 
+h4
+{
+    margin: 4% 2% 0 2%;
+}
+
 h1
 {
     color: black;
 }
 
 
-h4
-{
-    margin-top: 4%;
-}
+
+/* --------------------------RESPONSIVE-----------------------------------*/
 
 
-
-/*RESPONSIVE MOBILE */
-
-@media all and (max-width: 700px)
-{
-    body
+@media all and (max-width: 700px) and (max-device-width: 500px){
+     body
     {
         width: auto;
         margin: 0;
@@ -289,20 +266,20 @@ h4
         background-color: #567C73;
     }
     
-    #img
+    #ma_photo
     {
-        margin:auto;
-        padding: 0;
+        width: 100%;
     }
 
-    #ma_photo
+    #photo
     {
         width: 150px;
         height: 150px;
         border: 1px solid white;
+        margin: auto;
     }
 
-    .entete
+    #header
     {
         width: auto;
         margin: 0;
@@ -310,7 +287,7 @@ h4
         text-align: center;
     }
 
-    .firstname, h1, h2
+    #name, h1, h2
     {
         color: white;
     }
@@ -340,67 +317,51 @@ h3
 {
     display: none;
 }
+/*----------GAUCHE------------*/
 
 #bloc_gauche
 {
-    width: 100%;
     flex-direction: row;
-    margin: 0;
-    padding: 2% 0;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #bloc_gauche h3
 {
-    background-color: #567C73;
-    color: white;
-    padding: 0;
+    font-size: 80%;
+    border-right: none;
+    padding: 2% 0;
 }
 
 #contact
 {
-    width: 30%;
+    width: 49%;
+    border-right: 3px white solid;
+    margin-top: 1%;
+
 }
 
 #a_propos_de_moi
 {
-    width: 40%;
-    border-left: 2px solid white;
-    line-height: 120%;
+    width: 49%;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 1%;
 }
 
-#a_propos_de_moi h3
+.infos
 {
-    padding-top: 2%;
+    padding: 0 5%;
+    margin: 0;
 }
 #loisir
 {
-
-    width: 20%;
-    margin: 0;
-    border-left: 2px solid white;
+    width: 100%;
 }
 
 #loisir_icones
 {
-    flex-direction: column;
+    padding: 2% 0;
 }
 
-#a_propos_de_moi p
-{
-    margin: 0;
-    padding: 5% 10%;
-    letter-spacing: 0;
-}
-#contact ul
-{
-    margin: 0;
-    padding: 5% 10%;
-    text-align: justify;
-    line-height: 120%;
-
-}
-
-
-
-}
 
