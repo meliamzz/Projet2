@@ -9,16 +9,20 @@
     font-style: normal;
 }
 
-body
+*
 {
-	font-family: robotolight, arial, serif, sans-serif;
-    margin: auto;
-    border: 1px solid #567C73;
+    padding: 0;
+    margin: 0;
 }
 
-#bloc_page
+body
 {
+    font-family: robotolight, arial, serif, sans-serif;
+    border: 1px solid #567C73;
+    max-width: 900px;
     width: 100%;
+    text-align: justify;
+    color: #424242;
 }
 
 b
@@ -30,21 +34,76 @@ a{
     text-decoration: none;
     color: white;
 }
-        /*-------------HEADER---------------*/
-header
+
+ul
+{
+    list-style: none;
+}
+
+p, li, h5
+{
+    font-size: 70%;
+}
+
+.flex
 {
     display: flex;
-    width: 100%;
 }
 
-#ma_photo
+.bloc_gauche, .bloc_droit
+{
+    flex-direction: column;
+}
+
+.w-35
+{
+    width: 35%;
+}
+
+.w-65
+{
+    width: 65%;
+}
+
+.green
+{
+    color: #567C73;
+}
+
+b{
+    font-style: bold;
+}
+/*-------------------BLOC GAUCHE-------------------*/
+.bloc_gauche
 {
     background-color: #567C73;
-    width: 35%;
-    padding-top: 5%;
-    padding-bottom: 4%;
+    color: white;
 }
 
+.bloc_gauche h3
+{
+    background-color: white;
+    text-align: center;
+    padding: 1% 0;
+    border-right: 1px solid #567C73;
+}
+
+.infos, .loisir_icones
+{
+    padding: 7% 10%;
+}
+
+.apropos p
+{
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    line-height: 220%;
+}
+
+.ma_photo
+{
+    padding: 12% 0;
+}
 #photo
 {
     width: 150px;
@@ -54,97 +113,7 @@ header
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    background-size: 35%;
-}
-
-#header
-{
-    width: 65%;
-    text-align: justify;
-    margin: 5%;
-    line-height: 110%;
-    color: #424242;
-}
-
-#name
-{
-    color: #567C73;
-}
-
-h1
-{
-    font-size: 250%;
-}
-
-u
-{
-    text-decoration-color: #567C73;
-    padding-top: 3%;
-    text-underline-position: under;
-}
-
-#header h2
-{
-    font-size: 130%;
-}
-
- 
-main
-{
-    display: flex;
-    flex-direction: row-reverse;
-}
-            /*-----------------BLOC GAUCHE -----------------*/
-#bloc_gauche
-{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    background-color: #567C73;
-}
-
-.infos
-{
-    font-size: 70%;
-    text-align: justify;
-    padding: 2% 15% 5% 10%;
-    margin-top: 5%;
-    color: white;
-}
-
-#a_propos_de_moi
-{
-    letter-spacing: 0.1em;
-    line-height: 150%;
-    flex-grow: 1;
-}
-
-#bloc_gauche h3
-{
-    background-color: white;
-    color: #567C73;
-    text-align: center;
-    padding: 2% 0;
-    margin: 0;
-    font-size: 120%;
-    border-right: 1px solid #567C73;
-}
-
-ul
-{
-    list-style: none;
-    padding: 0;
-}
-
-ul li
-{
-    padding-bottom: 5%;
-}
-
-#loisir_icones
-{
-    display: flex;
-    padding: 8%;
+    background-size: 34%;
 }
 
 .icones
@@ -158,88 +127,90 @@ ul li
     border-radius: 50%;
     color: white;
     margin: auto;
-    padding: auto;
 }
 
-            /*-------------- BLOC DROIT--------------*/
-
-#bloc_droit
+.apropos
 {
-    width: 65%;
-    margin:  0 5%;
-    color: #424242;
+    flex-grow: 1;
 }
 
-#bloc_droit p
-{
-    font-size: 75%;
+li{
+    padding-bottom: 5%;
 }
 
-#bloc_droit h3
+/*-----------------BLOC DROIT--------------------*/
+.bloc_droit
 {
+    margin: 5%;
+}
+.header
+{
+    padding: 4% 0;
+}
+
+h1{
+    font-size: 240%;
+    line-height: 160%;
+    color: black;
+}
+
+u{
+    text-decoration-color: #567C73;
+    text-underline-position: under;
+}
+
+h2{
+    font-size: 110%;
+}
+
+.parcours
+{
+    border-top: 2px solid #567C73;
+
+}
+
+.bloc_droit h3
+{
+    padding-top: 7%;
+    padding-bottom: 2%;
     font-size: 120%;
     color: black;
-    margin-bottom: 2%;
 }
 
-#bloc_droit h4
+.bloc_droit h4
 {
-    font-size: 100%;
-    color: #424242;
+    font-size: 95%;
 }
 
-h3 i,.dot
+.bloc_droit p
 {
-    color: #567C73;
-    padding-right: 5%;
-
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
 }
 
-.bloc_formation, .bloc_emploi
+.bloc_parcours
 {
-    display: flex;
+    padding-top: 5%;
 }
 
 .date
 {
-    width: 34%;
-    display: flex;
+    font-size: 75%;
 }
 
-.dot
+.etablissement *
 {
-    padding: 5% 7% 0 0;
+    padding-bottom: 2%;
 }
 
-.etablissement
+h3 i,.dot
 {
-    width: 64%;
-    text-align: justify;
+    padding-right: 5%;
+
 }
 
-#recommandations
-{
-    display: flex;
-    padding-bottom: 5%;
-}
-
-.id_reco
+.recommandation
 {
     width: 50%;
-}
-
-#formation, #emploi, #recommandations
-{
-    border-top: 2px solid #567C73;
-    padding-top: 4%;
-}
-
-h4
-{
-    margin: 4% 2% 0 2%;
-}
-
-h1
-{
-    color: black;
+    padding-top: 5%;
 }
