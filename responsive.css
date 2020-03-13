@@ -11,25 +11,26 @@
     {
         flex-direction: column;
         background-color: #567C73;
-        text-align: center;
     }
 
-    .ma_photo, .header, .bloc_droit
+    .ma_photo
+    {
+        margin: auto;
+        padding: 1% 0
+    }
+
+    .id
     {
         width: auto;
-        padding: 0 2%;
+        padding-bottom: 2%;
     }
-    
 
-    h1, .name, h2
+    h1, h2, .name
     {
-        padding: 0;
+        width: auto;
         color: white;
-    }
-
-    h2
-    {
-        padding-bottom: 5%;
+        text-align: center;
+        padding: 0;
     }
 
     main
@@ -37,28 +38,42 @@
         flex-direction: column-reverse;
     }
 
+    .bloc_gauche, .bloc_droit
+    {
+        width: auto;
+    }
+
+    .bloc_droit
+    {
+        padding: 0 2%;
+    }
+
+    .bloc_droit i 
+    {
+        display: none;
+    }
+
+    h3, .recommandation
+    {
+        text-align: center;
+    }
+
+    .parcours
+    {
+        padding-bottom: 2%;
+    }
+
     .bloc_gauche
     {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
     }
 
     .contact, .apropos
     {
         width: 50%;
-        border-top: 3px solid #567C73;
+        border-top: solid 3px #567C73;
         text-align: center;
-    }
-
-    h3
-    {
-        text-align: center;
-    }
-
-    .bloc_droit i
-    {
-        display: none;
     }
 
     .loisir
@@ -68,12 +83,5 @@
 
     .infos
     {
-        padding: 2%;
-    }
-
-    .recommandation
-    {
-        text-align: center;
-    }
-
+        padding: 2% 0;
     }
