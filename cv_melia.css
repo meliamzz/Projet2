@@ -11,8 +11,7 @@
 
 *
 {
-    padding: 0;
-    margin: 0;
+margin: 0;
 }
 
 body
@@ -20,7 +19,6 @@ body
     font-family: robotolight, arial, serif, sans-serif;
     border: 1px solid #567C73;
     max-width: 900px;
-    width: 100%;
     text-align: justify;
     color: #424242;
 }
@@ -30,13 +28,15 @@ b
     font-weight: bold;
 }
 
-a{
+a
+{
     text-decoration: none;
     color: white;
 }
 
-ul
+ul, .infos p
 {
+    padding: 0 10%;
     list-style: none;
 }
 
@@ -73,6 +73,42 @@ p, li, h5
 b{
     font-style: bold;
 }
+
+/*--------------------HEADER-----------------------*/
+
+.ma_photo
+{
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+.photo
+{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #486860;
+    background: url(ma_photo.jpg) no-repeat center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    background-size: 35%;
+}
+
+h1{
+    font-size: 240%;
+    line-height: 160%;
+    color: black;
+    padding-top: 12%;
+}
+
+u{
+    text-decoration-color: #567C73;
+    text-underline-position: under;
+}
+
+h2{
+    font-size: 120%;
+}
 /*-------------------BLOC GAUCHE-------------------*/
 .bloc_gauche
 {
@@ -84,36 +120,20 @@ b{
 {
     background-color: white;
     text-align: center;
-    padding: 1% 0;
     border-right: 1px solid #567C73;
+    padding: 1% 0;
 }
 
-.infos, .loisir_icones
+.infos 
 {
-    padding: 7% 10%;
+    padding: 9% 0;
 }
 
 .apropos p
 {
     letter-spacing: 0.1em;
     word-spacing: 0.2em;
-    line-height: 220%;
-}
-
-.ma_photo
-{
-    padding: 12% 0;
-}
-#photo
-{
-    width: 150px;
-    height: 150px;
-    border: 3px solid #567C73;
-    background: url(ma_photo.jpg) no-repeat center;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-    background-size: 34%;
+    line-height: 200%;
 }
 
 .icones
@@ -139,42 +159,24 @@ li{
 }
 
 /*-----------------BLOC DROIT--------------------*/
+
 .bloc_droit
 {
-    margin: 5%;
+padding: 0 5%;
 }
-.header
+
+.bloc_droit h3
 {
-    padding: 4% 0;
-}
-
-h1{
-    font-size: 240%;
-    line-height: 160%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 120%;
     color: black;
-}
-
-u{
-    text-decoration-color: #567C73;
-    text-underline-position: under;
-}
-
-h2{
-    font-size: 110%;
 }
 
 .parcours
 {
     border-top: 2px solid #567C73;
-
-}
-
-.bloc_droit h3
-{
-    padding-top: 7%;
-    padding-bottom: 2%;
-    font-size: 120%;
-    color: black;
+    padding-bottom: 5%;
 }
 
 .bloc_droit h4
@@ -212,5 +214,5 @@ h3 i,.dot
 .recommandation
 {
     width: 50%;
-    padding-top: 5%;
+    padding: 5% 0;
 }

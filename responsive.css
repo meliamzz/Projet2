@@ -1,114 +1,70 @@
 @media all and (max-width: 700px) {
+     
+
      body
     {
         width: auto;
-        margin: 0;
-        border:none;
+        border: none;
     }
+
     header
     {
-        width: auto;
         flex-direction: column;
-        margin: auto;
         background-color: #567C73;
+        text-align: center;
     }
-    
-    #ma_photo
+
+    .ma_photo, .header
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1, .name, h2
+    {
+        padding: 0;
+        color: white;
+    }
+
+    h2
+    {
+        padding-bottom: 5%;
+    }
+
+    main
+    {
+        flex-direction: column-reverse;
+    }
+
+    .bloc_droit
+    {
+        width: auto;
+    }
+
+    .bloc_gauche
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact, .apropos
+    {
+        width: 50%;
+        border-top: 3px solid #567C73;
+        text-align: center;
+
+    }
+
+    .loisir
     {
         width: 100%;
     }
 
-    #photo
+    .infos
     {
-        width: 150px;
-        height: 150px;
-        border: 1px solid white;
-        margin: auto;
+        padding: 2%;
+    }
     }
 
-    #header
-    {
-        width: auto;
-        margin: 0;
-        padding: 2% 0;
-        text-align: center;
-    }
-
-    #name, h1, h2
-    {
-        color: white;
-    }
-main
-{
-    flex-direction: column;
-}
-
-#bloc_droit
-{
-    margin: 0 3%;
-    width: auto;
-}
-
-h3
-{
-    width: 100%;
-    text-align: center;
-}
-
-#recommandations
-{
-    text-align: center;
-}
-
-#bloc_droit i
-{
-    display: none;
-}
-/*----------GAUCHE------------*/
-
-#bloc_gauche
-{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#bloc_gauche h3
-{
-    font-size: 80%;
-    border-right: none;
-    padding: 2% 0;
-}
-
-#contact
-{
-    width: 49%;
-    border-right: 3px white solid;
-    margin-top: 1%;
-
-}
-
-#a_propos_de_moi
-{
-    width: 49%;
-    letter-spacing: normal;
-    line-height: normal;
-    margin-top: 1%;
-}
-
-.infos
-{
-    padding: 0 5%;
-    margin: 0;
-}
-#loisir
-{
-    width: 100%;
-}
-
-#loisir_icones
-{
-    padding: 2% 0;
-}
-}
-
+    
