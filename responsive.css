@@ -63,6 +63,11 @@
         padding-bottom: 2%;
     }
 
+    .etablissement p
+    {
+        padding-right: 10%;
+    }
+
     .contact
     {
         border-top: solid 3px #567C73;

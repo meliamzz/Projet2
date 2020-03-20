@@ -164,17 +164,14 @@ padding: 0 5%;
 
 .bloc_droit h3
 {
+    width: 100%;
+    border-bottom: 2px solid #567C73;
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: 120%;
     color: black;
 }
 
-.parcours
-{
-    border-top: 2px solid #567C73;
-    padding-bottom: 5%;
-}
 
 .bloc_droit h4
 {
